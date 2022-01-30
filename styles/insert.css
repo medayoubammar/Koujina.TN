@@ -1,0 +1,7 @@
+body{
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(73, 168, 160));
+}
+nav{
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(73, 168, 160));
+
+}

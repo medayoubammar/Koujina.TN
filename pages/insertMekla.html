@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zid_Mekla</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/insert.css">
+</head>
+<body>
+    <!-- Image and text -->
+<nav class="navbar navbar-light bg-light p-3 ">
+    <a class="navbar-brand" href="#">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOb_m9gqaTNQ007GeYhnBBhTjmhc8PJXo9cmP9HuVA8-vzFK0xbvdwC3Ih807wbeJutbU&usqp=CAU" width="30" height="30" class="d-inline-block align-top" alt="">
+      Zid Mekla
+    </a>
+    <a class="navbar-brand" href="showMekla.html">
+        <img src="https://us.123rf.com/450wm/imagevectors/imagevectors1601/imagevectors160100321/50599342-vert-flat-observer-ic%C3%B4ne-et-cercle-vert.jpg?ver=6" width="30" height="30" class="d-inline-block align-top" alt="">
+        Chouf Mekla
+      </a>
+  </nav>
+  <p class="h3 text-center pt-5">Zid mekla  <i class="bi bi-bag-plus-fill"></i>
+    !</p>
+<div class="d-flex justify-content-center">
+    
+  <form class="container m-5" id="add-food-form">
+    <div class="form-row pb-2">
+      <div class="form-group col-md-10 pb-2">
+        <label for="inputEmail4">Food Name :</label>
+        <input type="text" class="form-control" id="food-name" placeholder="enter your meal name here">
+      </div>
+      <div class="form-group col-md-10">
+        <label for="inputPassword4">CIN :</label>
+        <input type="text" class="form-control" id="user-cin" placeholder="enter your CIN here">
+      </div>
+    </div>
+    <div class="form-group col-md-10">
+      <label for="inputAddress">Mekla description :</label>
+      <input type="text" class="form-control" id="food-desc" placeholder="mekla bnina , ...">
+    </div>
+    
+    <div class="form-row">
+  
+      <div class="form-group col-md-8 mb-3">
+        <label for="inputState">Town :</label>
+        <select id="food-location" class="form-control">
+          <option selected>Tunis</option>
+          <option>Sousse</option>
+          <option>Sfax</option>
+          <option>Tataouine</option>
+        </select>
+      </div>
+     
+    </div>
+
+    <div class="form-group col-md-10 pb-3">
+        <label for="inputAddress">Mekla Photo :</label>
+        <input type="url" class="form-control" id="food-pic" placeholder="put url food picture here">
+      </div>
+  
+    <button type="submit" class="btn btn-success">Confirme</button>
+  </form>
+</div>
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+
+<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
+
+
+<!-- Add Firebase products that you want to use -->
+
+<script src="/server/addReciepe.js"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</html>
